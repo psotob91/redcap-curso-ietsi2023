@@ -1,0 +1,24 @@
+---
+title: "Introducción a REDCap para Investigación Clínica"
+subtitle: "Programa de Formación Científica 2023"
+page-layout: full
+section-divs: false
+toc: false
+css: index.css
+editor: source
+---
+
+::: grid
+::: g-col-8
+<p align="justify">Este sitio web contiene el syllabus, cronograma y materiales para el curso **Introducción a REDCap para Investigación Clínica** organizado por la **Dirección en Investigación en Salud (DIS)** del **Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI)** del **Seguro Social de Salud del Perú (EsSalud)**. Se revisará la creación de proyectos, los modos de uso (formulario electrónico y encuesta), configuración de usuarios y permisos, así como el diseño y despliegue de los formularios electrónicos. Se abordará el diseño de formularios longitudinales y de eventos repetidos, así como la configuración de notificaciones automatizadas. Asimismo, se revisarán las herramientas de validación de datos que ofrece REDCap para el aseguramiento y control de su calidad.</p>
+:::
+
+::: g-col-4
+**DOCENTE**  
+[{{< fa smile >}}]() Percy Soto-Becerra <br>
+[{{< fa envelope-open >}}]() percys1991\@gmail.com <br> 
+[{{< fa brands orcid >}}](https://orcid.org/0000-0001-5332-9254) 0000-0001-5332-9254<br> 
+[{{< fa brands github >}}](https://github.com/psotob91) psotob91<br>
+[{{< fa brands twitter >}}](https://twitter.com/psotob91) @psotob91
+:::
+:::

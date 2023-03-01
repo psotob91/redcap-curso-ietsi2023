@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Programa de Formación Cientifica 2023 - Introducción a REDCap para Investigación Clínica"
+  image: images/logo-curso.png
+  favicon: images/logo-curso.png
+  open-graph: true
+  twitter-card: true
+  site-url: https://ietsi-academy-aed.netlify.app/
+  repo-url: https://github.com/psotob91/ae-ietsi-2022/
+  repo-actions: [edit, issue]
+  page-navigation: true
+  reader-mode: true
+  navbar:
+    background: light
+    search: true
+    logo: images/logo-curso.png
+    title: false
+    collapse-below: lg
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

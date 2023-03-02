@@ -1,0 +1,14 @@
+{
+  "hash": "019e9de32497d79e3190bb5ab6227bae",
+  "result": {
+    "markdown": "---\ntitle: \"Sesión 07\"\ndate: \"2023-03-10\"\n---\n\n\n## Objetivos\n\nEn esta sesión se buscará abordar los siguientes temas: \n\n-\n-\n-\n\n\n## Materiales\n\n::: {.panel-tabset}\n\n### Clase grabada\n\n\n\n\n### Slides\n\n\n\n\n\n\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"../slides/sesion01/sesion01_chalkboard-speaker.html\" title=\"Sesión 1 - Intro a R\"></iframe>\n```\n\n\n### Talleres\n\n- Puede descargar los archivos generados en la carpeta `taller01` en el siguiente enlace: [Aquí]().\n\n\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

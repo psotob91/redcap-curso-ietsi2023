@@ -1,0 +1,105 @@
+---
+title: Syllabus
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+#| include: false
+library(dplyr)
+library(tibble)
+library(pander)
+library(gt)
+library(kableExtra)
+```
+
+::: {.grid .course-details .course-details-smaller}
+
+::: {.g-col-6}
+### Instructor
+
+- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+- {{< fa university >}} &nbsp; {{< var instructor.office >}}
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+- {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
+:::
+
+::: {.g-col-6}
+### Detalles del curso
+
+- {{< fa calendar >}} &nbsp; {{< var course.days >}}
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+:::
+
+:::
+
+## I. Aspectos generales
+
+<p align="justify">El Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI), tiene dentro de sus funciones el promover y desarrollar investigación en EsSalud, para el beneficio de sus asegurados. Así mismo, la directiva que regula el desarrollo de la investigación en salud, establece que la dirección de investigación en salud, debe de promover actividades de investigación en salud, entre las cuales se enmarca el entrenamiento en aspectos metodológicos.</p>
+
+<p align="justify">Se revisará la creación de proyectos, los modos de uso (formulario electrónico y encuesta), configuración de usuarios y permisos, así como el diseño y despliegue de los formularios electrónicos. Se abordará el diseño de formularios longitudinales y de eventos repetidos, así como la configuración de notificaciones automatizadas. Asimismo, se revisarán las herramientas de validación de datos que ofrece REDCap para el aseguramiento y control de su calidad. Por último, el entrenamiento busca que los estudiantes demuestren ser capaces de crear un formulario electrónico completo en REDCap en base a algún instrumento de captura de datos utilizado en un estudio de investigación real.</p>
+
+## II. Competencias del programa
+
+- <p align="justify">Crea un formulario electrónico completo en REDCap, en base a algún instrumento de captura de datos utilizado en un estudio de investigación real.</p>
+
+## III. Resultados de aprendizaje
+
+<p align="justify">Al finalizar las unidades, los profesionales serán capaces de:</p>
+
+-	<p align="justify">**Unidad I:** Al finalizar la Unidad I, el estudiante habrá revisado los aspectos teóricos sobre cómo configurar un proyecto REDCap y diseñar formularios electrónicos para estudios con una sola medición en el tiempo.</p>
+
+-	<p align="justify">**Unidad II:** Al finalizar la Unidad II, el estudiante conocerá aspectos teóricos de cómo diseñar estudios longitudinales o con eventos repetidos.</p> 
+
+-	<p align="justify">**Unidad III:** Al finalizar la Unidad III, el estudiante conocerá aspectos teóricos de cómo realizar configuraciones avanzadas tales como notificaciones automatizadas, usar herramientas de validación de datos, monitoreo de datos, exportar datos, conectarse a una API, uso de extensiones y plantillas.</p>
+
+## IV. Contenidos
+
+-	<p align="justify">**Unidad I:** Creación de Formularios en REDCap.</p>
+-	<p align="justify">**Unidad II:** Formularios y encuestas longitudinales.</p>
+-	<p align="justify">**Unidad III:** Configuraciones avanzadas en REDCap.</p>
+
+## V. Estrategias didácticas
+
+- <p align="justify">Los participantes recibirán sesiones teóricas de manera virtual.</p>
+- <p align="justify">Los participantes, recibirán las diapositivas de las sesiones teóricas al inicio de cada sesión.</p>
+
+## VI. Evaluación
+
+<p align="justify">Para efectos de evaluar a los participantes se tomarán en cuenta los siguientes criterios:</p>
+
+-	<p align="justify">La calificación es en escala de 0 a 20.</p>
+-	<p align="justify">El promedio final aprobatorio del curso es 12.00.</p>
+-	<p align="justify">La nota final se calcula en base a un examen final teórico de 20 preguntas.</p>
+
+<p align="justify">Para aprobar el programa, los participantes deberán cumplir con tres requisitos:</p> 
+
+-	<p align="justify">Cumplir con el requisito de asistencia al programa.</p>
+-	<p align="justify">Aprobar el examen final del programa (calificación mayor o igual a 12.0 en el examen final).</p>
+
+<p align="justify">Se otorgará certificado como asistente a quienes asistan a las tres sesiones del curso y aprueben la evaluación final. Todos los demás participantes recibirán una constancia de participación.</p>
+
+## VII. Docentes
+
+:::{.callout-note collapse=false appearance='default' icon=false}
+## **Percy Soto Becerra, M.D., M.Sc(c)**
+
+<p align="justify">Investigador RENACYT con publicaciones en revistas científicas indizadas a SCOPUS, Medline y Web of Science. Médico cirujano por la Universidad Nacional Mayor de San Marcos (UNMSM),  egresado de la Maestría en Ciencias en Investigación Epidemiológica de la Universidad Peruana Cayetano Heredia (UPCH) y maestrando de la maestría de Estadística de la Universidad Nacional Agraria La Molina (UNALM). Cuenta con más de tres años de experiencia en la formulación, implementación, y gestión de proyectos de investigación científica en salud. Posee una sólida formación en métodos cuantitativos para la investigación epidemiológica y redacción científica, asimismo, ha realizado entrenamiento avanzado y cuenta con experiencia en bioestadística y ciencia de datos. Ha obtenido financiamiento internacional como investigador principal junior; así como participar en investigaciones en salud con la aplicación de métodos avanzados en análisis de datos. Ha sido becario del Centro Internacional Fogarty de los Institutos Nacionales de Salud de los Estados Unidos mediante el proyecto D43 TW007393 Peru Epidemiology Research Training Consortium, el cual le permitió recibir entrenamiento en investigación biomédica. Ha colaborado como investigador en el Centro de Investigaciones Económicas y Sociales de la Universidad San Ignacio de Loyola (USIL), el Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI) del Seguro Social (EsSalud), el Centro Nacional de Salud Ocupacional (CENSOPAS) y el Centro Nacional de Salud Pública (CNSP) del Instituto Nacioanl de Salud (INS)  y el Centro de Salud Global de la UPCH. Actualmente y es investigador asociado a la Universidad Continental. Interesado en aplicar métodos cuantitativos modernos para inferencia causal en epidemiología (efectividad clínica comparativa y evaluación de impacto de programas de salud), investigación clínica pronóstica y diagnóstica con especial énfasis en aplicaciones a medicina de precisión.</p>
+
+- Google Scholar: <https://scholar.google.com/citations?user=lYRCQzYAAAAJ&hl=en> 
+- Github: <https://github.com/psotob91>
+- E-mail: <percys1991@gmail.com>  
+:::
+
+## VIII. Bibliografía
+
+1. <p align="justify">Vanderbit University. REDCap: User Guide. [Enlace](https://www.vumc.org/nursingebp/sites/default/files/public_files/Vanderbilt%20Meharry%20REDCap%20User%20Guide%20v4.1.pdf)</p>
+
+2. <p align="justify">University of Nebraska Medical Center. A Comprehensive Guide to REDCap. Omaha, NE 2019. [Enlace](https://www.unmc.edu/vcr/_documents/unmc_redcap_usage.pdf)</p>
+
+3. <p align="justify">The University of Chicago Medicine & Biological Sciences. REDCap: Beginner’s Guide. [Enlace](https://cri.uchicago.edu/wp-content/uploads/2015/12/REDCap-Beginners-Guide.pdf)</p>
+
+

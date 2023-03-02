@@ -1,16 +1,289 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introducción a REDCap para Investigación Clínica",
-    "section": "",
-    "text": "Este sitio web contiene el syllabus, cronograma y materiales para el curso Introducción a REDCap para Investigación Clínica organizado por la Dirección en Investigación en Salud (DIS) del Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI) del Seguro Social de Salud del Perú (EsSalud). Se revisará la creación de proyectos, los modos de uso (formulario electrónico y encuesta), configuración de usuarios y permisos, así como el diseño y despliegue de los formularios electrónicos. Se abordará el diseño de formularios longitudinales y de eventos repetidos, así como la configuración de notificaciones automatizadas. Asimismo, se revisarán las herramientas de validación de datos que ofrece REDCap para el aseguramiento y control de su calidad.\n\n\n\nDOCENTE\n Percy Soto-Becerra   percys1991@gmail.com   0000-0001-5332-9254  psotob91  @psotob91"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "content/00-content.html",
+    "href": "content/00-content.html",
+    "title": "Sesión 00",
+    "section": "",
+    "text": "¡Bienvenidos al Curso Introducción a REDCap para Investigación Clínica!"
+  },
+  {
+    "objectID": "content/00-content.html#objetivos",
+    "href": "content/00-content.html#objetivos",
+    "title": "Sesión 00",
+    "section": "Objetivos",
+    "text": "Objetivos\nEn esta sesión se buscará:\n\nPresentación de curso y recursos informáticos.\nVerificación de acceso al REDCap de IETSI: Enlace aquí\nRecursos informáticos del curso y recursos de aprendizaje en línea."
+  },
+  {
+    "objectID": "content/00-content.html#acceso-al-redcap-del-ietsi",
+    "href": "content/00-content.html#acceso-al-redcap-del-ietsi",
+    "title": "Sesión 00",
+    "section": "Acceso al REDCap del IETSI",
+    "text": "Acceso al REDCap del IETSI\n\nAsegúrese de tener la un usuario activo en REDCap de IETSI.\nSi Ud. proporcionó un correo en hotmail, outlook o cualquier otro cliente de correo diferente a gmail, yahoo o essalud, entonces revise su bandeja principal o spam.\n\nLe debe haber llegado un correo electrónico para configurar su clave de acceso.\nIngrese al enlace y configure esta clave.\n\nSi Ud. proporcionó un correo en gmail, yahoo o essalud, entonces probablemente no haya llegado ningún correo de creación de contraseña.\n\nDe todos modos, verifique esto en su bandeja principal o spam.\nSi no llegó correo alguno, proporcionenos un correo electrónico en hotmail, outlook u otro cliente diferente a gmail, yahoo o essalud en este enlace: Aquí.\n\nSi no cuenta con un correo en estos otros clientes, por favor, cree una cuenta gratutita en este enlace: Crear correo outlook"
+  },
+  {
+    "objectID": "content/00-content.html#materiales",
+    "href": "content/00-content.html#materiales",
+    "title": "Sesión 00",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nNo hay talleres en esta sesión."
+  },
+  {
+    "objectID": "content/01-content.html",
+    "href": "content/01-content.html",
+    "title": "Sesión 01",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/01-content.html#materiales",
+    "href": "content/01-content.html#materiales",
+    "title": "Sesión 01",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/02-content.html",
+    "href": "content/02-content.html",
+    "title": "Sesión 02",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/02-content.html#materiales",
+    "href": "content/02-content.html#materiales",
+    "title": "Sesión 02",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/03-content.html",
+    "href": "content/03-content.html",
+    "title": "Sesión 03",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/03-content.html#materiales",
+    "href": "content/03-content.html#materiales",
+    "title": "Sesión 03",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/04-content.html",
+    "href": "content/04-content.html",
+    "title": "Sesión 04",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/04-content.html#materiales",
+    "href": "content/04-content.html#materiales",
+    "title": "Sesión 04",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/05-content.html",
+    "href": "content/05-content.html",
+    "title": "Sesión 05",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/05-content.html#materiales",
+    "href": "content/05-content.html#materiales",
+    "title": "Sesión 05",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/06-content.html",
+    "href": "content/06-content.html",
+    "title": "Sesión 06",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/06-content.html#materiales",
+    "href": "content/06-content.html#materiales",
+    "title": "Sesión 06",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/07-content.html",
+    "href": "content/07-content.html",
+    "title": "Sesión 07",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/07-content.html#materiales",
+    "href": "content/07-content.html#materiales",
+    "title": "Sesión 07",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/08-content.html",
+    "href": "content/08-content.html",
+    "title": "Sesión 08",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/08-content.html#materiales",
+    "href": "content/08-content.html#materiales",
+    "title": "Sesión 08",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/09-content.html",
+    "href": "content/09-content.html",
+    "title": "Sesión 09",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/09-content.html#materiales",
+    "href": "content/09-content.html#materiales",
+    "title": "Sesión 09",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/10-content.html",
+    "href": "content/10-content.html",
+    "title": "Sesión 10",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/10-content.html#materiales",
+    "href": "content/10-content.html#materiales",
+    "title": "Sesión 10",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/11-content.html",
+    "href": "content/11-content.html",
+    "title": "Sesión 11",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/11-content.html#materiales",
+    "href": "content/11-content.html#materiales",
+    "title": "Sesión 11",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/12-content.html",
+    "href": "content/12-content.html",
+    "title": "Sesión 12",
+    "section": "",
+    "text": "En esta sesión se buscará abordar los siguientes temas:"
+  },
+  {
+    "objectID": "content/12-content.html#materiales",
+    "href": "content/12-content.html#materiales",
+    "title": "Sesión 12",
+    "section": "Materiales",
+    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Clases, lecturas y videos",
+    "section": "",
+    "text": "Cada sesión también tiene una lista de reproducción de videos grabados para cada una de las secciones de clase. Las diapositivas de las clases pueden archivos Power Point convencionales o archivos HTML especiales hechos con revealjs a través de Quarto (¡R puede hacer mucho!). En cada sesión verás un botón para abrir la presentación en una nueva pestaña:\n\n Ver diapositivas en una nueva ventana\nLas diapositivas HTML también están incrustadas en cada página. Puede hacer clic en las diapositivas y navegar por ellas con ← and →. Si escribe ? mientras ve las diapositivas, puede ver una lista de comandos específicos de diapositivas (como f para pantalla completa).\nPor último, algunas sesiones pueden tener un conjunto de enlaces web o lecturas recomendadas que se sugiere revisen para afianzar o ampliar lo abordado en clases."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introducción a REDCap para Investigación Clínica",
+    "section": "",
+    "text": "Introducción a REDCap para Investigación Clínica\n        \n        \n            Curso para profesionales de la salud de EsSalud, Perú\n        \n        \n            REDCAP-IETSI-2023 • Programa de Formación Científica 2023Dirección de Investigación en Salud |  Instituto de Evaluación de Tecnologías en Salud e Investigación – IETSI, EsSalud  Virtual & Sincrónico\n        \n    \n    \n        \n    \n\n\n\n\n\nInstructor\n\n   Percy Soto-Becerra, M.D., M.Sc(c)\n   Virtual: Google Meet\n   percys1991@gmail.com\n   @psotob91\n   Agenda una reunión virtual\n\n\n\nDetalles del curso\n\n   Viernes\n   03 de marzo al 17 de marzo, 2023\n   2-6 pm\n   Google Meet\n\n\n\nContáctame\nE-mail y Whatssap son las mejores formas de ponerse en contacto conmigo. Intentaré responder a todos los correos electrónicos relacionados con el curso y los mensajes dentro de las 24 horas (de verdad), pero también recuerde que la vida puede ser ajetreada y caótica para todos (¡incluido yo!), así que si no respondo enseguida, no te preocupes!"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Cronograma",
+    "section": "",
+    "text": "¡Aquí encontrará la hoja de ruta para el curso!\n\n\nPresentación (): Esta página contiene el enlace a las clases, diapositivas y conferencias grabadas de la semana. Lea y mire estos antes de nuestra reunión sincrónica.\n\n\n\nUNIDAD I: CREACIÓN DE FORMULARIOS EN REDCAP\n\n\n\n\n\n\n\nTítulo\n\n\nDocente\n\n\nPresentación\n\n\n\n\n\n\nSesión 0\n\n\n\n\n3/03/2023   (13:20-14:00)\n\n\nPalabras de bienvenida y Presentación del curso\n\n\nAutoridades del IETSI\n\n\n\n\n\n\n\nSesión 1\n\n\n\n\n3/03/2023   (14:00-15:00)\n\n\nIntroducción a REDCap y configuración general\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 2\n\n\n\n\n3/03/2023   (15:00-16:00)\n\n\nCreación y configuración de formularios electrónicos en REDCap - Parte 1\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 3\n\n\n\n\n3/03/2023   (16:00-17:00)\n\n\nCreación y configuración de formularios electrónicos en REDCap - Parte 2\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 4\n\n\n\n\n3/03/2023   (17:00-18:00)\n\n\nCreación y configuración de formularios electrónicos en REDCap - Parte 3\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\n\n\n\nUNIDAD II: FORMULARIOS Y ENCUESTAS LONGITUDINALES\n\n\n\n\n\n\n\nTítulo\n\n\nDocente\n\n\nPresentación\n\n\n\n\n\n\nSesión 5\n\n\n\n\n10/03/2023  (14:00-15:00)\n\n\nCreación y configuración de formularios longitudinales\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 6\n\n\n\n\n10/03/2023  (15:00-16:00)\n\n\nCreación de formularios para eventos repetidos\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 7\n\n\n\n\n10/03/2023  (16:00-17:00)\n\n\nConfiguraciones adicionales: Grupo de Acceso a Datos, Calendarios, y Notificaciones Automatizadas\n\n\nDr. Armando Pezo Pezo\n\n\n\n\n\n\n\nSesión 8\n\n\n\n\n10/03/2023  (17:00-18:00)\n\n\nEncuestas en línea\n\n\nDr. Mahony Reátegui Rivera\n\n\n\n\n\n\n\n\n\n\nUNIDAD III: CONFIGURACIONES AVANZADAS EN REDCAP\n\n\n\n\n\n\n\nTítulo\n\n\nDocente\n\n\nPresentación\n\n\n\n\n\n\nSesión 9\n\n\n\n\n17/03/2023  (14:00-15:00)\n\n\nUso de herramientas de aseguramiento y control de calidad de datos\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 10\n\n\n\n\n17/03/2023  (15:00-16:00)\n\n\nExportación de datos y uso de API para conexión entre REDCap, Stata, R y PowerBI.\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 11\n\n\n\n\n17/03/2023  (16:00-17:00)\n\n\nAspectos éticos y regulatorios de manejo de datos con REDCap\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nSesión 12\n\n\n\n\n17/03/2023  (17:00-18:00)\n\n\nMisceláneas\n\n\nDr. Percy Soto Becerra\n\n\n\n\n\n\n\nExamen final\n\n\n\n\n17/03/2023–17/03/2023\n\n\nExamen final(enviar antes de 23:59)\n\n\nEquipo DIS-IETSI"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Percy Soto-Becerra, M.D., M.Sc(c)\n   Virtual: Google Meet\n   percys1991@gmail.com\n   @psotob91\n\n\n\n\n\n   Viernes\n   03 de marzo al 17 de marzo, 2023\n   2-6 pm\n   Google Meet"
+  },
+  {
+    "objectID": "syllabus.html#i.-aspectos-generales",
+    "href": "syllabus.html#i.-aspectos-generales",
+    "title": "Syllabus",
+    "section": "I. Aspectos generales",
+    "text": "I. Aspectos generales\n\nEl Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI), tiene dentro de sus funciones el promover y desarrollar investigación en EsSalud, para el beneficio de sus asegurados. Así mismo, la directiva que regula el desarrollo de la investigación en salud, establece que la dirección de investigación en salud, debe de promover actividades de investigación en salud, entre las cuales se enmarca el entrenamiento en aspectos metodológicos.\n\n\nSe revisará la creación de proyectos, los modos de uso (formulario electrónico y encuesta), configuración de usuarios y permisos, así como el diseño y despliegue de los formularios electrónicos. Se abordará el diseño de formularios longitudinales y de eventos repetidos, así como la configuración de notificaciones automatizadas. Asimismo, se revisarán las herramientas de validación de datos que ofrece REDCap para el aseguramiento y control de su calidad. Por último, el entrenamiento busca que los estudiantes demuestren ser capaces de crear un formulario electrónico completo en REDCap en base a algún instrumento de captura de datos utilizado en un estudio de investigación real."
+  },
+  {
+    "objectID": "syllabus.html#ii.-competencias-del-programa",
+    "href": "syllabus.html#ii.-competencias-del-programa",
+    "title": "Syllabus",
+    "section": "II. Competencias del programa",
+    "text": "II. Competencias del programa\n\n\nCrea un formulario electrónico completo en REDCap, en base a algún instrumento de captura de datos utilizado en un estudio de investigación real."
+  },
+  {
+    "objectID": "syllabus.html#iii.-resultados-de-aprendizaje",
+    "href": "syllabus.html#iii.-resultados-de-aprendizaje",
+    "title": "Syllabus",
+    "section": "III. Resultados de aprendizaje",
+    "text": "III. Resultados de aprendizaje\n\nAl finalizar las unidades, los profesionales serán capaces de:\n\n\n\nUnidad I: Al finalizar la Unidad I, el estudiante habrá revisado los aspectos teóricos sobre cómo configurar un proyecto REDCap y diseñar formularios electrónicos para estudios con una sola medición en el tiempo.\n\n\nUnidad II: Al finalizar la Unidad II, el estudiante conocerá aspectos teóricos de cómo diseñar estudios longitudinales o con eventos repetidos.\n\n\nUnidad III: Al finalizar la Unidad III, el estudiante conocerá aspectos teóricos de cómo realizar configuraciones avanzadas tales como notificaciones automatizadas, usar herramientas de validación de datos, monitoreo de datos, exportar datos, conectarse a una API, uso de extensiones y plantillas."
+  },
+  {
+    "objectID": "syllabus.html#iv.-contenidos",
+    "href": "syllabus.html#iv.-contenidos",
+    "title": "Syllabus",
+    "section": "IV. Contenidos",
+    "text": "IV. Contenidos\n\n\nUnidad I: Creación de Formularios en REDCap.\n\n\nUnidad II: Formularios y encuestas longitudinales.\n\n\nUnidad III: Configuraciones avanzadas en REDCap."
+  },
+  {
+    "objectID": "syllabus.html#v.-estrategias-didácticas",
+    "href": "syllabus.html#v.-estrategias-didácticas",
+    "title": "Syllabus",
+    "section": "V. Estrategias didácticas",
+    "text": "V. Estrategias didácticas\n\n\nLos participantes recibirán sesiones teóricas de manera virtual.\n\n\nLos participantes, recibirán las diapositivas de las sesiones teóricas al inicio de cada sesión."
+  },
+  {
+    "objectID": "syllabus.html#vi.-evaluación",
+    "href": "syllabus.html#vi.-evaluación",
+    "title": "Syllabus",
+    "section": "VI. Evaluación",
+    "text": "VI. Evaluación\n\nPara efectos de evaluar a los participantes se tomarán en cuenta los siguientes criterios:\n\n\n\nLa calificación es en escala de 0 a 20.\n\n\nEl promedio final aprobatorio del curso es 12.00.\n\n\nLa nota final se calcula en base a un examen final teórico de 20 preguntas.\n\n\n\nPara aprobar el programa, los participantes deberán cumplir con tres requisitos:\n\n\n\nCumplir con el requisito de asistencia al programa.\n\n\nAprobar el examen final del programa (calificación mayor o igual a 12.0 en el examen final).\n\n\n\nSe otorgará certificado como asistente a quienes asistan a las tres sesiones del curso y aprueben la evaluación final. Todos los demás participantes recibirán una constancia de participación."
+  },
+  {
+    "objectID": "syllabus.html#vii.-docentes",
+    "href": "syllabus.html#vii.-docentes",
+    "title": "Syllabus",
+    "section": "VII. Docentes",
+    "text": "VII. Docentes\n\n\n\n\n\n\nPercy Soto Becerra, M.D., M.Sc(c)\n\n\n\n\n\n\nInvestigador RENACYT con publicaciones en revistas científicas indizadas a SCOPUS, Medline y Web of Science. Médico cirujano por la Universidad Nacional Mayor de San Marcos (UNMSM), egresado de la Maestría en Ciencias en Investigación Epidemiológica de la Universidad Peruana Cayetano Heredia (UPCH) y maestrando de la maestría de Estadística de la Universidad Nacional Agraria La Molina (UNALM). Cuenta con más de tres años de experiencia en la formulación, implementación, y gestión de proyectos de investigación científica en salud. Posee una sólida formación en métodos cuantitativos para la investigación epidemiológica y redacción científica, asimismo, ha realizado entrenamiento avanzado y cuenta con experiencia en bioestadística y ciencia de datos. Ha obtenido financiamiento internacional como investigador principal junior; así como participar en investigaciones en salud con la aplicación de métodos avanzados en análisis de datos. Ha sido becario del Centro Internacional Fogarty de los Institutos Nacionales de Salud de los Estados Unidos mediante el proyecto D43 TW007393 Peru Epidemiology Research Training Consortium, el cual le permitió recibir entrenamiento en investigación biomédica. Ha colaborado como investigador en el Centro de Investigaciones Económicas y Sociales de la Universidad San Ignacio de Loyola (USIL), el Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI) del Seguro Social (EsSalud), el Centro Nacional de Salud Ocupacional (CENSOPAS) y el Centro Nacional de Salud Pública (CNSP) del Instituto Nacioanl de Salud (INS) y el Centro de Salud Global de la UPCH. Actualmente y es investigador asociado a la Universidad Continental. Interesado en aplicar métodos cuantitativos modernos para inferencia causal en epidemiología (efectividad clínica comparativa y evaluación de impacto de programas de salud), investigación clínica pronóstica y diagnóstica con especial énfasis en aplicaciones a medicina de precisión.\n\n\nGoogle Scholar: https://scholar.google.com/citations?user=lYRCQzYAAAAJ&hl=en\nGithub: https://github.com/psotob91\nE-mail: percys1991@gmail.com"
+  },
+  {
+    "objectID": "syllabus.html#viii.-bibliografía",
+    "href": "syllabus.html#viii.-bibliografía",
+    "title": "Syllabus",
+    "section": "VIII. Bibliografía",
+    "text": "VIII. Bibliografía\n\n\nVanderbit University. REDCap: User Guide. Enlace\n\n\nUniversity of Nebraska Medical Center. A Comprehensive Guide to REDCap. Omaha, NE 2019. Enlace\n\n\nThe University of Chicago Medicine & Biological Sciences. REDCap: Beginner’s Guide. Enlace"
   }
 ]

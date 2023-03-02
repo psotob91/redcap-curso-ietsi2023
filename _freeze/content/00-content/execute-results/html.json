@@ -1,0 +1,14 @@
+{
+  "hash": "540376e221fef8310bc910e77d953d74",
+  "result": {
+    "markdown": "---\ntitle: \"Sesión 00\"\ndate: \"2022-10-03\"\n---\n\n\n## Bievenida al curso\n\n¡Bienvenidos al Curso **Introducción a REDCap para Investigación Clínica**!\n\n\n## Objetivos\n\nEn esta sesión se buscará:\n\n- Presentación de curso y recursos informáticos.\n\n- Verificación de acceso al REDCap de IETSI: [Enlace aquí](https://redcap-ietsi.essalud.gob.pe/redcap/)\n\n- Recursos informáticos del curso y recursos de aprendizaje en línea.\n\n## Acceso al REDCap del IETSI\n\n- Asegúrese de tener la un usuario activo en REDCap de IETSI. \n\n- Si Ud. proporcionó un correo en `hotmail`, `outlook` o cualquier otro cliente de correo diferente a `gmail`, `yahoo` o `essalud`, entonces revise su `bandeja principal` o `spam`. \n\n    - Le debe haber llegado un correo electrónico para configurar su clave de acceso.\n    - Ingrese al enlace y configure esta clave.\n\n- Si Ud. proporcionó un correo en `gmail`, `yahoo` o `essalud`, entonces probablemente no haya llegado ningún correo de creación de contraseña.\n\n    - De todos modos, verifique esto en su `bandeja principal` o `spam`. \n    - Si no llegó correo alguno, proporcionenos un correo electrónico en `hotmail`, `outlook` u otro cliente diferente a `gmail`, `yahoo` o `essalud` en este enlace: [Aquí]().\n    \n        + Si no cuenta con un correo en estos otros clientes, por favor, cree una cuenta gratutita en este enlace: [Crear correo outlook](https://signup.live.com/signup?lcid=1033&wa=wsignin1.0&rpsnv=13&ct=1677718140&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26signup%3d1%26RpsCsrfState%3d38d39550-28dd-a690-05b9-6b914d653fcb&id=292841&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015&lic=1&uaid=30f40c5cd0f44d21b809a6d1acf398cb) \n\n## Materiales\n\n::: {.panel-tabset}\n\n### Clase grabada\n\n\n\n### Slides\n\n\n\n\n\n\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"../slides/sesion01/sesion00_chalkboard-speaker.html\" title=\"Sesión 0 - Bienvenida al Curso\"></iframe>\n```\n\n\n\n### Talleres\n\n- No hay talleres en esta sesión.\n\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

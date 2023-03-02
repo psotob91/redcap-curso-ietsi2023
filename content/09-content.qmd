@@ -1,0 +1,45 @@
+---
+title: "Sesión 09"
+date: "2023-03-17"
+---
+
+## Objetivos
+
+En esta sesión se buscará abordar los siguientes temas: 
+
+-
+-
+-
+
+
+## Materiales
+
+::: {.panel-tabset}
+
+### Clase grabada
+
+
+
+
+### Slides
+
+```{r slides-videos, echo=FALSE, include=FALSE}
+source(here::here("R", "slide-things.R"))
+```
+
+```{r show-slide-tabs1, echo=FALSE, results="asis"}
+# slide_buttons("/slides/sesion01/sesion01_chalkboard-speaker")
+```
+
+```{=html}
+<iframe width="780" height="500" src="../slides/sesion01/sesion01_chalkboard-speaker.html" title="Sesión 1 - Intro a R"></iframe>
+```
+
+### Talleres
+
+- Puede descargar los archivos generados en la carpeta `taller01` en el siguiente enlace: [Aquí]().
+
+
+:::
+
+

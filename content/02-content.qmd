@@ -18,8 +18,7 @@ En esta sesión se buscará abordar los siguientes temas:
 
 ### Clase grabada
 
-
-
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/804763362?h=65ea215370&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sesi&amp;oacute;n 2 - Creaci&amp;oacute;n y configuraci&amp;oacute;n de formularios electr&amp;oacute;nicos en REDCap - Parte 1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Slides
 
@@ -28,11 +27,11 @@ source(here::here("R", "slide-things.R"))
 ```
 
 ```{r show-slide-tabs1, echo=FALSE, results="asis"}
-# slide_buttons("/slides/sesion01/sesion01_chalkboard-speaker")
+slide_buttons("sesion02")
 ```
 
 ```{=html}
-<iframe width="780" height="500" src="../slides/sesion01/sesion01_chalkboard-speaker.html" title="Sesión 1 - Intro a R"></iframe>
+<iframe width="780" height="500" src="sesion02.html" title="Sesión 1 - Intro a R"></iframe>
 ```
 
 ### Talleres

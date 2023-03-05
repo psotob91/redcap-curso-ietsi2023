@@ -1,0 +1,221 @@
+---
+format: 
+  revealjs: 
+    embed-resources: false
+    theme: theme/slides.scss
+    css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
+    toc: false
+    footer: "Curso: Introducción a REDCap para Investigación Clínica"
+    logo: logo.png
+    transition: fade
+    background-transition: fade
+    incremental: false
+    slide-number: c/t
+    height: 900
+    width: 1600
+    chalkboard: false
+    controls: false
+    highlight-style: ayu-mirage
+    multiplex: true
+    touch: true
+    auto-stretch: true
+    link-external-icon: false
+    link-external-newwindow: false
+    self-contained-math: true
+    preview-links: true
+    menu:
+      side: left
+      width: normal
+      numbers: true
+from: markdown+emoji
+execute:
+  echo: false
+  freeze: auto
+---
+
+# {background-image='img/slide-title.png'}
+
+\
+\
+\
+\
+\
+\
+
+<h1>[Sesión 03]{.blanco}</h1>
+<h4>[Creación y configuración de formularios electrónicos]{.blanco}</h4>
+<h4>[en REDcap (parte 2)]{.blanco}</h4>
+<hr>
+
+<h3>[Percy Soto-Becerra, M.D., M.Sc(c)]{.blanco}</h3>
+
+<h4>[DIS | IETSI, ESSalud]{.blanco}</h4>
+
+<h4>[2023]{.blanco}</h4>
+
+![](img/logo.png){.absolute top=150 left=950}
+
+::: footer
+[Curso: Introducción a REDCap para Investigación Clínica]{.blanco}
+:::
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Creación de formularios electrónicos]{.verde-essalud}</h1>
+
+## Formulario de reporte de caso (CRF) vs. Encuesta (Survey) {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+
+::: {.info-box}
+Los `CRF` son completados por el `personal del estudio`. 
+:::
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/crf.png")
+```
+
+
+:::
+
+::: {.column width='50%'}
+
+::: {.info-box}
+Las `encuestas` son completadas por el `mismo participante`.
+:::
+
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/survey2.png")
+```
+
+:::
+
+::::
+
+## [1]{.circle} Use el Diseñador de formularios {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/diseñador.png")
+```
+
+## [2]{.circle} Cambie el nombre por defecto del form1 {background-image='img/slide-main.png'}
+<hr> 
+
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/cambiar-nombre.png")
+```
+
+## `r fontawesome::fa("laptop-code", "white")` Nuestro turno {background-color="#000000"}
+<hr>
+
+- 
+
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(20)
+```
+
+# {background-image='img/slide-section.png'}
+
+::: r-fit-text
+¿Preguntas?
+:::
+
+## `r fontawesome::fa("mug-saucer", "white")` Hagamos una pausa {background-color="#000000"}
+
+<hr>
+
+::: r-fit-text
+<center>
+
+Tomemos un descanso de `5 minutos`...
+
+Estire las piernas `r fontawesome::fa("person-walking", "white")`...
+
+Deje de ver las pantallas `r fontawesome::fa("laptop", "white")`...
+
+... cualquier `r fontawesome::fa("laptop", "white")`, las del celular `r fontawesome::fa("mobile", "white")` también.
+
+</center>
+:::
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(5)
+```
+
+# {background-image='img/slide-end.png'}
+
+::: footer
+[]{.blanco}
+:::

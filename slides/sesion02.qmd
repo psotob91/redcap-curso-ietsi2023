@@ -1,0 +1,433 @@
+---
+format: 
+  revealjs: 
+    embed-resources: false
+    theme: theme/slides.scss
+    css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
+    toc: false
+    footer: "Curso: Introducción a REDCap para Investigación Clínica"
+    logo: logo.png
+    transition: fade
+    background-transition: fade
+    incremental: false
+    slide-number: c/t
+    height: 900
+    width: 1600
+    chalkboard: false
+    controls: false
+    highlight-style: ayu-mirage
+    multiplex: true
+    touch: true
+    auto-stretch: true
+    link-external-icon: false
+    link-external-newwindow: false
+    self-contained-math: true
+    preview-links: true
+    menu:
+      side: left
+      width: normal
+      numbers: true
+from: markdown+emoji
+execute:
+  echo: false
+  freeze: auto
+---
+
+# {background-image='img/slide-title.png'}
+
+\
+\
+\
+\
+\
+\
+
+<h1>[Sesión 02]{.blanco}</h1>
+<h4>[Creación y configuración de formularios electrónicos]{.blanco}</h4>
+<h4>[en REDcap (parte 1)]{.blanco}</h4>
+<hr>
+
+<h3>[Percy Soto-Becerra, M.D., M.Sc(c)]{.blanco}</h3>
+
+<h4>[DIS | IETSI, ESSalud]{.blanco}</h4>
+
+<h4>[2023]{.blanco}</h4>
+
+![](img/logo.png){.absolute top=150 left=950}
+
+::: footer
+[Curso: Introducción a REDCap para Investigación Clínica]{.blanco}
+:::
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Configuración General de REDCap]{.verde-essalud}</h1>
+
+
+## Proyectos / Instrumentos en REDCap (1/3) {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/proy1.png")
+```
+
+## Proyectos / Instrumentos en REDCap (2/3) {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/proy2.png")
+```
+
+## Proyectos / Instrumentos en REDCap (3/3) {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/proy3.png")
+```
+
+## Flujo de un Proyecto de REDCap {background-image='img/slide-main.png'}
+<hr> 
+
+
+:::: {.columns}
+
+::: {.column width='70%'}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/flujo-proyecto.png")
+```
+
+:::
+
+::: {.column width='30%'}
+3 fases: 
+
+1. Desarrollo
+2. Producción
+
+    - Todo ingreso de datos es considerado vivo
+    
+3. Archivado
+    - Estudio inactivo
+    - Análisis de datos completos
+    - Varios datasets por artículo.
+
+:::
+
+::::
+
+## Estados de un proyecto de REDCap {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/estados.png")
+```
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Creación de un proyecto, paso a paso]{.verde-essalud}</h1>
+
+## [1]{.circle} Iniciar sesión en REDCap {background-image='img/slide-main.png'}
+<hr> 
+
+:::: {.columns}
+
+::: {.column width='40%'}
+- Ayer debieron haber recibido una correo electrónico de EsSalud para:
+
+    + Crear `contraseña `y `fijar pregunta secreta`: `HACER AMBOS PASOS!`
+    + Si no fijan pregunta secreta y se olvidan su contraseña, no hay forma de recuperar la cuenta. Perderán la cuenta y tendrán que crear una nueva.
+    + La encriptación de los usuarios es tan alta que ni los administradores de REDCap pueden acceder a ella.
+
+:::
+
+::: {.column width='60%'}
+
+\
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/redcap-essalud.png")
+```
+
+- Inicien sesión: <https://redcap-ietsi.essalud.gob.pe/redcap/index.php> 
+
+:::
+
+::::
+
+
+## [2]{.circle} Cree un nuevo proyecto / instrumento {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/nuevo-instrumento.png")
+```
+
+## [3]{.circle} Ingrese metadatos del proyecto {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/ingrese-metadatos.png")
+```
+
+## [3]{.circle} Configuración general del proyecto {background-image='img/slide-main.png'}
+<hr> 
+
+:::: {.columns}
+
+::: {.column width='55%'}
+
+\
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/conf-proyecto.png")
+```
+:::
+
+::: {.column width='45%'}
+- Organizado en fases.
+- Cada vez que se termina uno, se marca la opción de `¡Terminado!`
+- Se sugiere completar todas las fases antes de poner a producción.
+
+    + No es lineal, puedes avanzar un paso antes que otro, pero todo debe ser terminado antes de poner en producción.
+
+- Es un proceso que debe hacerse concienzudamente.
+
+    + ¡No diseño los cuestionarios una semana antes de salir a campo!
+
+:::
+
+::::
+
+
+## [4]{.circle} Configure los permisos de usuario {background-image='img/slide-main.png'}
+<hr> 
+
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/permisos-usuarios.png")
+```
+
+
+## [4]{.circle} Configure los permisos de usuario {background-image='img/slide-main.png'}
+<hr> 
+
+:::: {.columns}
+
+::: {.column width='55%'}
+
+\
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/permisos-usuarios2.png")
+```
+:::
+
+::: {.column width='45%'}
+- Asigne los derechos de acuerdo a las recomendaciones de su administrador de IETSI. 
+
+    + Los derechos básicos controlan el nivel de acceso a los datos de los usuarios.
+
+- Usuarios con pocos derechos podrían solo ser supervisores y no poder ninguna data confidencial.
+
+    + Analistas de datos podrían solo descargar datos anonimizados.
+    + IP podría descargar datos incluso con datos personales de los participantes.
+
+:::
+
+::::
+
+
+## [5]{.circle} Vincule su usuario con un rol {background-image='img/slide-main.png'}
+<hr> 
+
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/rol-usuario.png")
+```
+
+## [6]{.circle} Agregue un usuario nuevo y vincúlelocon un rol {background-image='img/slide-main.png'}
+<hr> 
+
+:::: {.columns}
+
+::: {.column width='70%'}
+
+\
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/usuario-rol2.png")
+```
+:::
+
+::: {.column width='30%'}
+- Cada usuario debe ser creado primero por el administrador de REDCap (IETSI). 
+- Una vez te creas un usuario, este servirá para todos los proyectos en los que participes. 
+
+:::
+
+::::
+
+## [7]{.circle} Agregue un usuario nuevo y vincúlelocon un rol {background-image='img/slide-main.png'}
+<hr> 
+
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/usuario-rol3.png")
+```
+
+## [8]{.circle} Borrar / actualizar usuario {background-image='img/slide-main.png'}
+<hr> 
+
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/borrar-usuario.png")
+```
+
+# {background-image='img/slide-section.png'}
+
+::: r-fit-text
+¿Preguntas?
+:::
+
+## `r fontawesome::fa("laptop-code", "white")` Nuestro turno {background-color="#000000"}
+<hr>
+
+- Cree un proyecto en REDCap.
+
+    + Llámelo `Curso REDCap - Taller 01`.
+
+- Explore la ventana:
+    + Ingrese a `Inicio`, `Instrumentos`, `Crear un Instrumento`, `Ayuda`, `Capacitación`, `Compartir` y `Mensajería`
+    
+- Cree un nuevo `Proyecto` de REDCap y agregue a `psotob` y `psotob_prueba`.
+
+- Consigure los permisos para los usuarios:
+
+    + Cree el rol de `admin` con acceso a todo. Asigne este rol a Ud.
+    + Cree el rol de `data entry` con acesso solo a crear registros y editarlos. Asigne este rol a psotob_prueba.
+
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(20)
+```
+
+# {background-image='img/slide-section.png'}
+
+::: r-fit-text
+¿Preguntas?
+:::
+
+## `r fontawesome::fa("mug-saucer", "white")` Hagamos una pausa {background-color="#000000"}
+
+<hr>
+
+::: r-fit-text
+<center>
+
+Tomemos un descanso de `5 minutos`...
+
+Estire las piernas `r fontawesome::fa("person-walking", "white")`...
+
+Deje de ver las pantallas `r fontawesome::fa("laptop", "white")`...
+
+... cualquier `r fontawesome::fa("laptop", "white")`, las del celular `r fontawesome::fa("mobile", "white")` también.
+
+</center>
+:::
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(5)
+```
+
+# {background-image='img/slide-end.png'}
+
+::: footer
+[]{.blanco}
+:::

@@ -1,6 +1,6 @@
 ---
 title: "Sesión 00"
-date: "2022-10-03"
+date: "2023-03-03"
 ---
 
 ## Bievenida al curso
@@ -40,7 +40,7 @@ En esta sesión se buscará:
 
 ### Clase grabada
 
-
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/804755827?h=fba945e92c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sesi&amp;oacute;n 0 - Bienvenida"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Slides
 
@@ -49,11 +49,11 @@ source(here::here("R", "slide-things.R"))
 ```
 
 ```{r show-slide-tabs1, echo=FALSE, results="asis"}
-# slide_buttons("/slides/sesion01/sesion00_chalkboard-speaker")
+slide_buttons("sesion0")
 ```
 
 ```{=html}
-<iframe width="780" height="500" src="../slides/sesion01/sesion00_chalkboard-speaker.html" title="Sesión 0 - Bienvenida al Curso"></iframe>
+<iframe width="780" height="500" src="sesion0.html" title="Sesión 0 - Bienvenida al Curso"></iframe>
 ```
 
 

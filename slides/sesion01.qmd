@@ -1,0 +1,690 @@
+---
+format: 
+  revealjs: 
+    embed-resources: false
+    theme: theme/slides.scss
+    css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
+    toc: false
+    footer: "Curso: Introducción a REDCap para Investigación Clínica"
+    logo: logo.png
+    transition: fade
+    background-transition: fade
+    incremental: false
+    slide-number: c/t
+    height: 900
+    width: 1600
+    chalkboard: false
+    controls: false
+    highlight-style: ayu-mirage
+    multiplex: true
+    touch: true
+    auto-stretch: true
+    link-external-icon: false
+    link-external-newwindow: false
+    self-contained-math: true
+    preview-links: true
+    menu:
+      side: left
+      width: normal
+      numbers: true
+from: markdown+emoji
+execute:
+  echo: false
+  freeze: auto
+---
+
+# {background-image='img/slide-title.png'}
+
+\
+\
+\
+\
+\
+\
+
+<h1>[Sesión 01]{.blanco}</h1>
+
+<h4>[Introducción a REDCap y Configuración General]{.blanco}</h4>
+
+<hr>
+
+<h3>[Percy Soto-Becerra, M.D., M.Sc(c)]{.blanco}</h3>
+
+<h4>[DIS | IETSI, ESSalud]{.blanco}</h4>
+
+<h4>[2023]{.blanco}</h4>
+
+![](img/logo.png){.absolute top=150 left=950}
+
+::: footer
+[Curso: Introducción a REDCap para Investigación Clínica]{.blanco}
+:::
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Ciclo de datos en investigación]{.verde-essalud}</h1>
+
+
+
+## Datos en el contexto de estudios biomédicos {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+knitr::include_graphics("img/dcc.png")
+```
+
+## Proceso de captura y limpieza de datos en estudios biomédicos {background-image='img/slide-main.png'}
+<hr> 
+
+:::: {.columns}
+
+::: {.column width='60%'}
+- Documento fuente o fuente de datos
+- CRF, eCRF o encuestas
+- Control de calidad y consistencia:
+
+    + Edit Cheking
+    + Data Queries
+    
+- Proceso iterativo que requiere diferentes sub-procesos.
+- Algunas herramientas de captura de datos cuentan con facilidades para realizar estas tareas.
+:::
+
+::: {.column width='40%'}
+
+```{r}
+#| out-width: 100%
+knitr::include_graphics("img/captura-datos.png")
+```
+
+:::
+
+::::
+
+
+# {background-image='img/slide-section.png'}
+
+<h1>[REDCap: ¿Qué, por qué y para qué?]{.verde-essalud}</h1>
+
+
+## ¿Qué es REDCap? (1/2) {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+```{r}
+#| out-width: 100%
+knitr::include_graphics("img/redcap-sigla.png")
+```
+
+
+:::
+
+::: {.column width='50%'}
+
+- Captura electrónica de datos
+- Basado en web
+- Construido para investigación
+- Cumplimiento con estándares HIPAA
+- Amigable para el usuario
+- INS REDCap
+
+    + Uso libre
+    + Altamente seguro
+    + Back-up diario
+    
+:::
+
+::::
+
+
+## ¿Qué es REDCap? (2/2) {background-image='img/slide-main.png'}
+<hr>
+
+- `Aplicativo web gratuito` para construir y administrar todo los tipos de datos de investigación:
+
+    + Crear encuesta en líneas o formularios de reporte de caso (CRF) con estructuras apropiadas para estudios longitudinales, multi-brazo, y más.
+    + Importar y exportar datos a Excel, csv, SPSS, SAS, R, Stata, XML (estándar sugerido por FDA).
+    + Estructurar bases de datos
+    
+- Herramienta desarrollada por la `Universidad de Vanderbilt`.
+- Diseñado con `altos niveles de seguridad` y para facilitar las `buenas prácticas de gestión de datos` para investigación biomédica.
+- Instituciones prestigiosas (`FDA`, `EMA`, NIH, etc.) reconocen su uso.
+
+
+## {background-image='img/slide-main.png'}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/mapa-redcap-detallado.png")
+```
+
+<center><https://www.project-redcap.org/></center>
+
+## 6374 instituciones socias del consorcio en 151 países {background-image='img/slide-main.png'}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/mapa-redcap.png")
+```
+
+<center><https://redcap.vanderbilt.edu/consortium/map_fullscreen.php></center>
+
+## REDCap en Perú {background-image='img/slide-main.png'}
+<hr>
+
+::: {.panel-tabset}
+
+### Centro/Institutos de Investigación
+
+- Centro de Investigaciones Tecnológicas y Medioambientales (CITBM) – UNMSM
+- Instituto Nacional de Salud Mental
+- Centro de Investigación de Enfermedad Cerebrovascular 
+- Instituto Nacional de Salud
+- Instituto de Evaluación de Tecnologías en Salud e Investigación – IETSI, EsSalud
+- Instituto Nacional de Salud del Niño San Borja
+- International Center for Advanced Research and Applied Science
+- Socios en Salud Perú
+- PRISMA
+
+### Universidades
+
+- Universidad Nacional José Faustino Carrión – Escuela de Medicina 
+- Universidad Nacional Mayor de San Marcos – Escuela de Medicina
+- Universidad de Piura
+- Universidad Peruana Cayetano Heredia
+
+:::
+
+## REDCap en EsSalud {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='30%'}
+- REDCap desde noviembre de 2020.
+- Instalado en servidores locales de EsSalud.
+- Administración:
+    + TI: GCTIC
+    + De usuario: IETSI
+    
+- Uso actual:
+
+    + Investigación biomédica
+    + Soporte de gestión
+:::
+
+::: {.column width='70%'}
+
+
+```{r}
+#| out-width: 100%
+knitr::include_graphics("img/redcap-essalud.png")
+```
+
+<center><https://redcap-ietsi.essalud.gob.pe/redcap/></center>
+
+:::
+
+::::
+
+## ¿Por qué usar REDCap? {background-image='img/slide-main.png'}
+<hr>
+
+- Provee a los investigadores una herramienta que permite…
+
+    + Definir formularios / datos
+    + Controlar el acceso de los usuarios a los datos
+    + Capturar la entrada de datos
+    + Validar campos/consultar datos (queries)
+    + Almacenar datos
+    + Exportar datos para análisis
+    + Aplicativo móvil
+
+## Forma 'tradicional' vs REDCap {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='30%'}
+- Forma tradicional vs. REDCap
+- REDCap, en cambio, es
+
+    + Confiable
+    + Seguro
+    + Trazable
+:::
+
+::: {.column width='70%'}
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/redcap-porque-flujo.png")
+```
+
+:::
+
+::::
+
+## REDCap sitematiza y ahorra dinero {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/redcap-porque-flujo2.png")
+```
+
+## REDCap sitematiza y ahorra dinero {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/redcap-porque-flujo3.png")
+```
+
+## Funcionalidades existentes en REDCap {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+:::{.box}
+- Herramienta de programación de calendario
+- Diseñador de formularios gráficos en línea
+- Múltiples tipos de datos compatibles
+- Validación de datos incorporada para campos de texto especiales (teléfono, correo electrónico, SSN, numérico, etc.)
+- Lógica de bifurcación para mostrar/ocultar campos condicionalmente
+- Campos de cálculo
+- Niveles de permiso de usuario configurables
+- Bloqueo de registros
+- Confirmación de cambio de registro
+- Plantillas de derechos de usuario y Plantillas de proyectos
+- Agrupación de usuarios para restricciones de acceso a datos de múltiples - sitios
+- Soporte de doble entrada de datos
+- Tubería variable
+- Generador de informes
+:::
+
+:::
+
+::: {.column width='50%'}
+:::{.box}
+- Herramienta de visualización de datos gráficos
+- Mecanismo simple de importación/exportación de datos
+- Sistema de consulta de calidad de datos para verificar la integridad de los datos
+- Interfaz API para integración con otros sistemas de datos.
+- Rutinas de registro detalladas para monitorear la creación, modificación, eliminación y visualización de datos.
+- Instrucciones de software integradas, preguntas frecuentes, tutoriales en video.
+- Biblioteca de formularios compartidos seleccionados
+- Módulo de aleatorización del tratamiento
+- Múltiples Encuestas y Programador de encuestas
+- Disparo por lógica/evento/datos y Activadores de entrada de datos
+- Llamadas de programa automatizadas
+- Consultas de datos y Detección de errores de datos
+- Flujo de trabajo de resolución de datos
+:::
+:::
+
+::::
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Modos de uso]{.verde-essalud}</h1>
+
+## “Digitación” de datos en papel u otra fuente {background-image='img/slide-main.png'}
+<hr>
+
+- Como formulario electrónico para digitar datos recopilados en papel
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/digitacion1.png")
+```
+
+## “Digitación” de datos en papel u otra fuente {background-image='img/slide-main.png'}
+<hr>
+
+- Como formulario electrónico para digitar datos recopilados en papel
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/digitacion2.png")
+```
+
+## Captura directa {background-image='img/slide-main.png'}
+<hr>
+
+- Como formulario electrónico para capturar datos directamente por el `personal de campo` o de `laboratorio` desde el documento fuente.
+
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/directo-dispositivos.png")
+```
+
+## Encuestas en línea {background-image='img/slide-main.png'}
+<hr>
+
+- Como encuesta en línea para que el mismo participante complete los cuestionarios.
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/encuesta.png")
+```
+
+## Captura de datos de fuentes informáticas externas {background-image='img/slide-main.png'}
+<hr>
+
+- Importar datos externos procedente de historia clínica electrónica, resultados de laboratorio automatizado, o cualquier otra fuente de EsSalud o fuera de EsSalud que interopere.
+
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/externo.png")
+```
+
+## En resumen {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/redcap-resumen-usos.png")
+```
+
+## Formulario de reporte de caso (CRF) vs. Encuesta (Survey) {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='40%'}
+
+
+::: {.info-box}
+Los `CRF` son completados por el `personal del estudio`. 
+:::
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/crf.png")
+```
+
+
+:::
+
+::: {.column width='60%'}
+
+::: {.info-box}
+Las `encuestas` son completadas por el `mismo participante`.
+:::
+
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/survey2.png")
+```
+
+
+:::
+
+::::
+
+
+## ¿Cuáles son las ventajas de REDCap? {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/redcap-ventajas.png")
+```
+
+- Además de esto, tiene una infinidad de funcionalidades bastante útiles para diferentes niveles de uso y usuarios.
+
+    + ¡Veamos solo algunas!
+    
+## Pizarra de estado registros amigable e interactiva {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/pizarra.png")
+```
+
+## Varios tipos de campos {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campos.png")
+```
+
+## Libro de códigos {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/libro-codigos.png")
+```
+
+## Exportación de datos {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/exportar.png")
+```
+
+## Calidad de datos {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad.png")
+```
+
+## Doble ingreso de datos y conciliación de discrepancias {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/doble-ingreso.png")
+```
+
+## Logging para auditorias {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/logging.png")
+```
+
+## Permisos de usuarios y Grupo de Acceso a Datos {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/usuarios.png")
+```
+
+## Alertas y envío de correos electrónicos / SMS automatizados {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/alertas.png")
+```
+
+## Calendario {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calendario.png")
+```
+
+## Bloqueo de registros (“Locking”)  {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/bloqueo.png")
+```
+
+## Repositorio de archivos {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/repositorio.png")
+```
+
+## REDCap app con opción offline {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/redcap-offline.png")
+```
+
+## `r fontawesome::fa("laptop-code", "white")` Nuestro turno {background-color="#000000"}
+<hr>
+
+- ¿Todos recibieron el correo para crear su contrasena nueva?
+
+    - Revisar su `Bandeja Principal` y su `SPAM`.
+    - Si usan gmail, yahoo o essalud, probablemente no haya llegado.
+    
+      - Creen o proporcionene un correo en `outlook` o `hotmail`.
+      
+- ¿Todos pueden loguearse en el aplicativo web de REDCap IETSI?
+
+    - Ingresen a este enlace: <https://redcap-ietsi.essalud.gob.pe/redcap/>
+    - Logueense.
+
+- Sugerencia: Pongan en `Favoritos` a la `web` de REDCap IETSI.
+
+    - También hagan lo mismo con la web del curso [enlace](https://ietsi-pfc2023-redcap.netlify.app/).
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(5)
+```
+
+# {background-image='img/slide-section.png'}
+
+::: r-fit-text
+¿Preguntas?
+:::
+
+## `r fontawesome::fa("mug-saucer", "white")` Hagamos una pausa {background-color="#000000"}
+
+<hr>
+
+::: r-fit-text
+<center>
+
+Tomemos un descanso de `5 minutos`...
+
+Estire las piernas `r fontawesome::fa("person-walking", "white")`...
+
+Deje de ver las pantallas `r fontawesome::fa("laptop", "white")`...
+
+... cualquier `r fontawesome::fa("laptop", "white")`, las del celular `r fontawesome::fa("mobile", "white")` también.
+
+</center>
+:::
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(5)
+```
+
+# {background-image='img/slide-end.png'}
+
+::: footer
+[]{.blanco}
+:::

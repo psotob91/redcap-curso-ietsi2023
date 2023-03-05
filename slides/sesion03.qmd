@@ -1,7 +1,7 @@
 ---
 format: 
   revealjs: 
-    embed-resources: false
+    embed-resources: true
     theme: theme/slides.scss
     css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
     toc: false

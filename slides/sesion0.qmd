@@ -1,7 +1,7 @@
 ---
 format: 
   revealjs: 
-    embed-resources: false
+    embed-resources: true
     theme: theme/slides.scss
     css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
     toc: false
@@ -94,21 +94,6 @@ execute:
     - Un examen al finalizar el curso.
 
 # {background-iframe="https://ietsi-pfc2023-redcap.netlify.app/schedule.html"}
-
-## Este curso está pensado para...
-<hr>
-
-![](img/ia-gisela.png)
-
-## Este curso está pensado para...
-<hr>
-
-![](img/ia-fernando.png)
-
-## Este curso está pensado para...
-<hr>
-
-![](img/ia-dedicacion.png)
 
 ## Sobre los recursos educativos
 <hr>

@@ -49,17 +49,13 @@ source(here::here("R", "slide-things.R"))
 ```
 
 ```{r show-slide-tabs1, echo=FALSE, results="asis"}
-slide_buttons("sesion0")
+slide_buttons("/slides/sesion0")
 ```
 
 ```{=html}
-<iframe width="780" height="500" src="sesion0.html" title="Sesión 0 - Bienvenida al Curso"></iframe>
+<iframe width="780" height="500" src="/slides/sesion0.html" title="Sesión 0 - Bienvenida al Curso"></iframe>
 ```
 
-
-### Talleres
-
-- No hay talleres en esta sesión.
 
 :::
 

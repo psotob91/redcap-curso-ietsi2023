@@ -1,8 +1,10 @@
 {
-  "hash": "fcf9d3c497eaa80f46313a053fb42734",
+  "hash": "7a77280ac77c8d87b3b712d5b55ad9cd",
   "result": {
-    "markdown": "---\ntitle: \"Sesión 05\"\ndate: \"2023-03-10\"\n---\n\n\n## Objetivos\n\nEn esta sesión se buscará abordar los siguientes temas: \n\n-\n-\n-\n\n\n## Materiales\n\n::: {.panel-tabset}\n\n### Clase grabada\n\n\n\n\n### Slides\n\n\n\n\n\n\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"../slides/sesion01/sesion01_chalkboard-speaker.html\" title=\"Sesión 1 - Intro a R\"></iframe>\n```\n\n\n### Talleres\n\n- Puede descargar los archivos generados en la carpeta `taller01` en el siguiente enlace: [Aquí]().\n\n\n:::\n\n\n\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Sesión 05\"\ndate: \"2023-03-10\"\n---\n\n\n## Objetivos\n\nEn esta sesión se buscará abordar los siguientes temas: \n\n- Eventos longitudinales\n- Características de los eventos longitudinales\n- Formularios repetidos\n\n\n## Materiales\n\n::: {.panel-tabset}\n\n### Clase grabada\n\n<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/808533719?h=9d5a23d803&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"Sesi&amp;oacute;n 5 - Creaci&amp;oacute;n y configuraci&amp;oacute;n de formularios longitudinales\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n### Slides\n\n\n\n\n\n\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"../slides/sesion01/sesion01_chalkboard-speaker.html\" title=\"Sesión 1 - Intro a R\"></iframe>\n```\n\n\n:::\n\n\n\n",
+    "supporting": [
+      "05-content_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

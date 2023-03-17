@@ -1,8 +1,10 @@
 {
-  "hash": "bc95f32a1c43ac2506ec78441fb6c7e4",
+  "hash": "ab2925ebe25a9ea0ffe8ad17d2ba1107",
   "result": {
-    "markdown": "---\ntitle: \"Sesión 04\"\ndate: \"2023-03-03\"\n---\n\n\n## Objetivos\n\nEn esta sesión se buscará abordar los siguientes temas: \n\n-\n-\n-\n\n\n## Materiales\n\n::: {.panel-tabset}\n\n### Clase grabada\n\n\n\n\n### Slides\n\n\n\n\n\n\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"../slides/sesion01/sesion01_chalkboard-speaker.html\" title=\"Sesión 1 - Intro a R\"></iframe>\n```\n\n\n### Talleres\n\n- Puede descargar los archivos generados en la carpeta `taller01` en el siguiente enlace: [Aquí]().\n\n\n:::\n\n\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Sesión 04\"\ndate: \"2023-03-03\"\n---\n\n\n## Objetivos\n\nEn esta sesión se buscará abordar los siguientes temas: \n\n- Accciones de copiar, mover y eliminar campo \n- Vista previa de formulario y visor de registros\n- Etiqueta de acción \n- Campos de texto descriptivo\n- Editor de enriquecimiento de texto\n- Incrustación de campos \n- Lógica de ramificación\n- Variables inteligentes\n- Campos calculados \n- Ingreso de datos\n- Privacidad de Datos en REDCap: Campos Identificadores\n- Libro de Códigos y Estructura de Base de Datos en REDCap\n\n## Materiales\n\n::: {.panel-tabset}\n\n### Clase grabada\n\n<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/808530908?h=7a08bd7983&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"Sesi&amp;oacute;n 4 - Creaci&amp;oacute;n y configuraci&amp;oacute;n de formularios electr&amp;oacute;nicos en REDCap - Parte 3\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>\n\n### Slides\n\n\n\n\n<p><a class=\"btn btn-danger\" target=\"_blank\" href=\"/slides/sesion04.pdf\"><i class=\"fa-solid fa-arrow-up-right-from-square\"></i> Ver diapositivas en una nueva ventana</a></p>\n\n```{=html}\n<iframe width=\"780\" height=\"500\" src=\"../slides/sesion04.pdf\" title=\"Sesión 04 - Creación de formularios electrónicos en REDCap - Parte 3\"></iframe>\n```\n\n\n:::\n\n",
+    "supporting": [
+      "04-content_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

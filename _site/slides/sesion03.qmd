@@ -1,7 +1,7 @@
 ---
 format: 
   revealjs: 
-    embed-resources: true
+    embed-resources: false
     theme: theme/slides.scss
     css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
     toc: false
@@ -101,8 +101,12 @@ knitr::include_graphics("img/survey2.png")
 
 ::::
 
-## [1]{.circle} Use el Diseñador de formularios {background-image='img/slide-main.png'}
+##  Use el Diseñador de formularios {background-image='img/slide-main.png'}
 <hr> 
+
+:::: {.columns}
+
+::: {.column width='60%'}
 
 ```{r}
 #| out-width: 100%
@@ -110,15 +114,318 @@ knitr::include_graphics("img/survey2.png")
 knitr::include_graphics("img/diseñador.png")
 ```
 
-## [2]{.circle} Cambie el nombre por defecto del form1 {background-image='img/slide-main.png'}
+:::
+
+::: {.column width='40%'}
+
+- Se puede acceder al `Diseñador de formularios` por dos vías:
+
+    + Panel vertical izquierdo
+    + Pestaña de Configuración
+
+- El `Diseñador de formularios` sirve par diseñar:
+
+    + `Formularios de Reporte de Caso` ('CRF')
+    + `Encuetas` ('survey')
+
+:::
+
+::::
+
+
+## Cambie el nombre por defecto del form1 {background-image='img/slide-main.png'}
 <hr> 
 
- 
 ```{r}
 #| out-width: 100%
 #| fig-align: center
 knitr::include_graphics("img/cambiar-nombre.png")
 ```
+
+## Cambie el nombre por defecto del form1 {background-image='img/slide-main.png'}
+<hr> 
+ 
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/cambiar-nombre2.png")
+```
+
+
+## Acceder al formulario que se desee editar {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/cambiar-nombre3.png")
+```
+
+## Edición de un formulario {background-image='img/slide-main.png'}
+<hr> 
+
+- Podemos editar un campo dándole click al símbolo de `lapiz`.
+
+- Podemos editar la `etiqueta de campo` y el `nombre de la variable`.
+
+::: {.r-stack} 
+
+![](img/id-editar.png){.fragment width=1200}
+
+![](img/id-editar2.png){.fragment width=1200}
+
+![](img/id-editar3.png){.fragment width=1200}
+
+:::
+
+## El form1 siempre tiene el campo identificador `id` {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo-id.png")
+```
+
+- `REDCap` siempre crea un `Form1` que tiene un campo identificador:
+
+    + En el `formulario`, es el campo que guarda el `identificador único`.
+    + En la `base de datos`, es la columna que guarda la `llave primaria`.
+
+- Este campo no puede eliminarse, es `imprescindible`.
+
+    + Sí podemos `cambiar` su `nombre de variable` y su `etiqueta de campo`.
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Campos]{.verde-essalud}</h1>
+
+## Creación de nuevos campos {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='70%'}
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/agregar_campo.png")
+```
+:::
+
+::: {.column width='30%'}
+Podemos: 
+
+- Agregar campo nuevo
+
+- Agregar una matriz de campos
+
+- Importar del banco de campos
+
+:::
+
+::::
+
+
+## Varios tipos de campos {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/tipos_campo.png")
+```
+
+## Caja de texto {background-image='img/slide-main.png'}
+<hr> 
+
+::: {.panel-tabset}
+
+### Campo
+
+:::: {.columns}
+
+::: {.column width='70%'}
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_caja_texto.png")
+```
+:::
+
+::: {.column width='30%'}
+- Campo que recopila texto de cualquier tipo:
+
+    + palabras u oraciones cortas
+    + números
+    + fechas
+    + otros: e-mail, teléfono, número de seguridad social, etc.
+
+- Debe ser relativamente corto.
+:::
+
+::::
+
+### Ejemplo de Campo
+
+:::: {.columns}
+
+::: {.column width='70%'}
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_caja_texto3.png")
+```
+:::
+
+::: {.column width='30%'}
+- Por ejemplo, el campo que recopila información del hospital.
+
+- La `etiqueta del campo` es para que el personal de campo / participante lo entienda.
+
+- El `nombre de la variable` es para la `base de datos`.
+:::
+
+::::
+
+
+### ¿Cómo se ve?
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_caja_texto2.png")
+```
+
+- Se aprecia la `etiqueta de campo`, una barra para introducir el texto y el `nombre de la variable`.
+
+### Otros ejemplos
+
+
+
+:::
+
+
+## Notas/Ensayo {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_notas_ensayo.png")
+```
+
+## Campo calculado {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_calculado.png")
+```
+
+##  Lista desplegable de selección múltiple (una sola rspuesta) {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_desplegable_multiple_unico.png")
+```
+
+##  Casilla de selección múltiple (una sola respuesta) {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_casilla_multiple_unico.png")
+```
+
+## Casilla de selección múltiple (múltiples respuestas)  {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_casilla_multiple_multiple.png")
+```
+
+##  Campo Sí - No {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_sino.png")
+```
+
+## Campo Verdadero - Falso {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_vf.png")
+```
+
+## Campo para Firma {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_firma.png")
+```
+
+## Campo para Cargar archivo {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_carga_archivo.png")
+```
+
+## Campo Deslizador/Escala Visual Analógico {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_deslizador.png")
+```
+
+## Campo de Texto Descriptivo {background-image='img/slide-main.png'}
+<hr> 
+
+```{r}
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/campo_texto_descriptivo.png")
+```
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Atributos adicionales de los campos]{.verde-essalud}</h1>
+
+## Campos requeridos {background-image='img/slide-main.png'}
+<hr> 
+
+
+## Campos identificadores {background-image='img/slide-main.png'}
+<hr> 
+
+
+## Alineación personalizada {background-image='img/slide-main.png'}
+<hr> 
+
+## Campos de nota {background-image='img/slide-main.png'}
+<hr> 
+
+## Validación del campo {background-image='img/slide-main.png'}
+<hr> 
+
 
 ## `r fontawesome::fa("laptop-code", "white")` Nuestro turno {background-color="#000000"}
 <hr>

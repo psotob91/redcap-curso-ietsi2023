@@ -1,0 +1,449 @@
+---
+format: 
+  revealjs: 
+    embed-resources: true
+    theme: theme/slides.scss
+    css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
+    toc: false
+    footer: "Curso: Introducción a REDCap para Investigación Clínica"
+    logo: logo.png
+    transition: fade
+    background-transition: fade
+    incremental: false
+    slide-number: c/t
+    height: 900
+    width: 1600
+    chalkboard: false
+    controls: false
+    highlight-style: ayu-mirage
+    multiplex: true
+    touch: true
+    auto-stretch: true
+    link-external-icon: false
+    link-external-newwindow: false
+    self-contained-math: true
+    preview-links: true
+    menu:
+      side: left
+      width: normal
+      numbers: true
+from: markdown+emoji
+execute:
+  echo: false
+  freeze: auto
+---
+
+# {background-image='img/slide-title.png'}
+
+\
+\
+\
+\
+\
+\
+
+<h1>[Sesión 09]{.blanco}</h1>
+<h4>[Uso de herramientas de aseguramiento y control ]{.blanco}</h4>
+<h4>[de calidad de datos]{.blanco}</h4>
+<hr>
+
+<h3>[Percy Soto-Becerra, M.D., M.Sc(c)]{.blanco}</h3>
+
+<h4>[DIS | IETSI, ESSalud]{.blanco}</h4>
+
+<h4>[2023]{.blanco}</h4>
+
+![](img/logo.png){.absolute top=150 left=950}
+
+::: footer
+[Curso: Introducción a REDCap para Investigación Clínica]{.blanco}
+:::
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Módulo de Calidad de Datos]{.verde-essalud}</h1>
+
+## Validación de Datos (quality checks) {background-image='img/slide-main.png'}
+<hr>
+
+> Proceso de garantizar que los datos se hayan sometido a una "limpieza" para generar un conjunto de datos de alta calidad, correcto, coherente y aplicable.
+
+- Es un proceso continuo
+- Debe planificarse e implementarse antes de la recolección de datos: 
+
+    + `aseguramiento de calidad`
+    
+- Debe realizarse desde el inicio y durante toda la recolección de datos: 
+
+    + `control de calidad`
+
+## Proceso de Validación de datos {background-image='img/slide-main.png'}
+<hr>
+
+\
+\
+
+```{r}
+#| echo: false
+knitr::include_graphics("img/calidad_datos_flujo.png")
+```
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Antes de iniciar la recolección de datos]{.verde-essalud}</h1>
+
+
+## ¿Cuánto antes debo verificar la calidad? {background-image='img/slide-main.png'}
+<hr>
+
+- Debo implementar el proceso de `aseguramiento de calidad` antes de pasar a producción el proyecto.
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad_proyecto.png")
+```
+
+## Aseguramiento de calidad previo pase a Producción {background-image='img/slide-main.png'}
+<hr>
+
+- El pase a producción del proyecto es `condición necesaria` para recopilar datos reales.
+
+- IETSI controla este paso en dos puntos:
+
+    - Verificar `aseguramiento de calidad`.
+    - Verificar `cumplimiento` de estándares `éticos` y `regulatorios`.
+    
+- La verificación de calidad de parte de IETSI no es tan estricta.
+
+    + Confiamos en que saben lo que hacen (tengan cuidado!)
+    
+- La verificación de cumpliemto de estándares éticos y regulatorios es muy estricta por parte de IETSI.
+    
+    + No confiamos en nadie hasta no verificarlo rigurosamente (tengan cuidado!)
+
+## ¿Por qué antes y no después? {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='50%'}
+[Objetivo]{.verde-essalud}
+
+- Diseñar el formato de recolección de datos que convenga al proyecto y asegure la calidad de los datos.
+
+    + Diccionario de datos
+    + Configuración del proyecto
+:::
+
+::: {.column width='50%'}
+[Beneficio]{.verde-essalud}
+
+- Reduce el numero de inconvenientes durante la recolección de datos
+- Reduce la carga de apoyo de parte del Administrador de REDCap
+- Reduce el tiempo de limpieza de los datos
+- Permite obtener datos de altísima calidad
+
+:::
+
+::::
+
+- Veamos algunos ejemplos de problemas de calidad frecuentes (en nuestra experiencia) encontrados antes de iniciar la recolección de datos.
+ 
+## Ejemplo [1]{.circle} Inconsistencias en codificación de alternativas recurrentes {background-image='img/slide-main.png'}
+<hr>
+
+- El clásico ejemplo son las alternativas de Si/No
+
+- Otras alternativas recurentes también pueden ser escritas de manera no armonizada.
+
+- La herramienta de `Copiar opciones existentes` puede ayudar a reducir este error.
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/valor_inconsist.png")
+```
+
+## Uso de copiar opciones existentes para prevenir errores de codificación {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='70%'}
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/opc_exist1.png")
+```
+
+:::
+
+::: {.column width='30%'}
+
+\
+\
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/opc_exist2.png")
+```
+
+:::
+
+::::
+
+
+## Ejemplo [2]{.circle} Formatos no asignados a eventos {background-image='img/slide-main.png'}
+<hr>
+
+- En formularios longitudinales es importante que cada uno de ellos tenga un evento asignado.
+
+    - Si no tiene evento asignado, el formulario no estará disponible.
+    
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/form_noevento.png")
+```
+
+
+## Ejemplo [3]{.circle} Errores en crear campos lógicos {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='60%'}
+
+- Errores de cálculo
+- Errores en lógica de ramificación
+- Problemas con la cola de encuestas
+- Problemas con invitaciones a encuestas automatizadas
+
+:::
+
+::: {.column width='40%'}
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calc_error.png")
+```
+
+:::
+
+::::
+
+
+## Ejemplo [4]{.circle} 'Testing' insuficiente {background-image='img/slide-main.png'}
+<hr>
+
+- Un problema común es que salen a recopilar datos apenas tienen la  versión 1 del formulario.
+
+    + Casi siempre van a encontrar problemas con los formularios en campo.
+    + Editar los formularios en producción conlleva el riesgo de perder datos.
+
+- Aunque no hay reglas mágicas, recomendamos seguir los siguientes estándares mínimo de testing:
+
+    + Haga al menos 3 pruebas con datos simulados ("fake")
+    + Al menos realice una exportación de datos 
+    + Revise su pizarra de registros!
+    + Altamente recomendable: Revisar el proyecto conm un asesor/experto en datos antes de pasar al modo producción.
+
+
+## Pruebe su instrumento antes de pasar a modo produccion {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/pruebe_instrumento.png")
+```
+
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Durante la recolección de datos (validación interna)]{.verde-essalud}</h1
+
+
+## 
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad_basura.png")
+```
+
+## Usar validación de datos en REDCap {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad_validacion.png")
+```
+
+## Buenas prácticas {background-image='img/slide-main.png'}
+<hr>
+
+- Evitar campos con textos libres
+- Definir el tipo de variable de los datos
+- No mezcle diferentes tipos de datos en una casilla de respuesta
+- Usar las reglas de validación de REDCap
+- Reducir la cantidad de datos perdidos
+- Evitar espacios en blanco
+- Ser consistente a lo largo del estudio usando los mismos códigos
+- Configura tu base de datos con la estructura en mente
+
+# {background-image='img/slide-section.png'}
+
+<h1>[Durante la recolección de datos (validación externa)]{.verde-essalud}</h1
+
+## Encontrar discrepancias (quality checks) {background-image='img/slide-main.png'}
+<hr>
+
+:::: {.columns}
+
+::: {.column width='40%'}
+- Use la herramienta de `calidad de datos` de REDCap.
+
+- Esta viene con `quality checks` pre configurados.
+
+- También viene con un `constructor` de nuevos `quality checks`.
+:::
+
+::: {.column width='60%'}
+```{r}
+#| echo: false
+#| out-width: 50%
+#| fig-align: center
+knitr::include_graphics("img/calidad_datos.png")
+```
+:::
+
+::::
+
+## Encontrar discrepancias (quality checks) {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad_datos_home.png")
+```
+
+## Encontrar discrepancias (quality checks) {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad_datos_home2.png")
+```
+
+## Encontrar discrepancias (quality checks) {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad_datos_ejecutar.png")
+```
+
+## Encontrar discrepancias (quality checks) {background-image='img/slide-main.png'}
+<hr>
+
+```{r}
+#| echo: false
+#| out-width: 100%
+#| fig-align: center
+knitr::include_graphics("img/calidad_datos_ejecutar2.png")
+```
+
+## Solucionar discrepancias {background-image='img/slide-main.png'}
+<hr>
+
+- Puedes solucionar discrepancia directamente.
+
+- O usar `queries` para que otra persona asignada los resuelva y documente su resolución.
+
+    + Corregido - datos perdidos
+    + Corregido - error de digitación
+    + Corregido - error de fuente
+    + Verificado - información correcta
+
+# {background-image='img/slide-section.png'}
+
+::: r-fit-text
+¿Preguntas?
+:::
+
+## `r fontawesome::fa("mug-saucer", "white")` Hagamos una pausa {background-color="#000000"}
+
+<hr>
+
+::: r-fit-text
+<center>
+
+Tomemos un descanso de `5 minutos`...
+
+Estire las piernas `r fontawesome::fa("person-walking", "white")`...
+
+Deje de ver las pantallas `r fontawesome::fa("laptop", "white")`...
+
+... cualquier `r fontawesome::fa("laptop", "white")`, las del celular `r fontawesome::fa("mobile", "white")` también.
+
+</center>
+:::
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(5)
+```
+
+# {background-image='img/slide-end.png'}
+
+::: footer
+[]{.blanco}
+:::

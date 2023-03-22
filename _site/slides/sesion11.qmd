@@ -1,0 +1,190 @@
+---
+format: 
+  revealjs: 
+    embed-resources: true
+    theme: theme/slides.scss
+    css: [theme/syntax-highlight.css, theme/custom.css, theme/pacman.css]
+    toc: false
+    footer: "Curso: Introducción a REDCap para Investigación Clínica"
+    logo: logo.png
+    transition: fade
+    background-transition: fade
+    incremental: false
+    slide-number: c/t
+    height: 900
+    width: 1600
+    chalkboard: false
+    controls: false
+    highlight-style: ayu-mirage
+    multiplex: true
+    touch: true
+    auto-stretch: true
+    link-external-icon: false
+    link-external-newwindow: false
+    self-contained-math: true
+    preview-links: true
+    menu:
+      side: left
+      width: normal
+      numbers: true
+from: markdown+emoji
+execute:
+  echo: false
+  freeze: auto
+---
+
+# {background-image='img/slide-title.png'}
+
+\
+\
+\
+\
+\
+\
+
+<h1>[Sesión 11]{.blanco}</h1>
+<h4>[Aspectos éticos y regulatorios del ]{.blanco}</h4>
+<h4>[manejo de datos con REDCap]{.blanco}</h4>
+<hr>
+
+<h3>[Percy Soto-Becerra, M.D., M.Sc(c)]{.blanco}</h3>
+
+<h4>[DIS | IETSI, ESSalud]{.blanco}</h4>
+
+<h4>[2023]{.blanco}</h4>
+
+![](img/logo.png){.absolute top=150 left=950}
+
+::: footer
+[Curso: Introducción a REDCap para Investigación Clínica]{.blanco}
+:::
+
+## Aspectos éticos y regulatorios {background-image='img/slide-main.png'}
+<hr>
+
+- Todos los principios de Ética en Investigación se aplican en el uso de REDCap.
+
+- También se aplican las regulaciones de EsSalud y de las leyes peruanas respecto al manejo de datos confidenciales.
+
+- Solo se puede recolectar datos reales cuando se cuente con aprobación de un comité de ética de investigación de acuerdo con las normativas vigentes de EsSalud.
+
+    + Sin embargo, se puede solicitar acceso al REDCap antes de obtener la aprobación por comité de ética.
+    + El testing se debe realizar con data fake.
+    
+- Se está trabajando una directiva para el uso del REDCap en IETSI.
+
+## Algunos lineamientos (1/2) {background-image='img/slide-main.png'}
+<hr>
+
+- Los estudios anónimos `no deben` recopilar `datos privados`.
+
+- Los estudios que `necesitan recolectar datos privados` deben `resguardar la confidencialidad` implementando `mecanismos explícitos` y `rigurosos` para esto.
+
+    + `Restringir el acceso a datos personales` a todo el personal del equipo que no necesite ver los datos privados para hacer bien su trabajo.
+    
+        + P. ej., el analista de datos no necesita acceder a datos privados.
+        
+    + Es obligatorio usar las `herramientas de REDCap` para el manejo de datos privados:
+    
+        + Indicar que es campo `identificador`.
+        + Descargar datos deidentificados.
+        + Etc.
+
+## Algunos lineamientos (2/2) {background-image='img/slide-main.png'}
+<hr>
+
+- REDcap proporciona un sistema de loging útil para las regulaciones
+
+    + Permite la trazabilidad del proceso de captura y manejo de datos.
+    + Es auditable.
+    
+- REDCap cuenta con un sistema de autentificación de usuarios basado en tablas seguro siempre y cuando los usuarios resguarden su contraseña.
+
+    + Está terminantemente `prohibido` `compartir` su `contraseña `a otra persona.
+    
+        + Compartir contraseña puede verse como `suplantación de identidad`.
+        
+    + Si desean que un nuevo miembro colabore usando REDCap, entonces soliciten que se les proporcione un usuario específico.
+    
+- El uso de las API está restringido a usuarios avanzados del equipo de investigación que el PI indique.
+
+    + Es de completa responsabilidad del equipo de investigación resguardar los token de las API.
+
+
+## ¿Cómo solicitar acceso a REDCap? {background-image='img/slide-main.png'}
+<hr>
+
+- Enviar correo electrónico a `coord.dis.ietsi@gmail.com` con copia al Gerente General `pedro.segura@essalud.gob.pe`.
+
+- El proyecto debe realizarse en EsSalud y haberse presentado a Comité de Ética:
+
+    + Si fue aprobado, enviar carta de aprobación y versión final de protocolo aprobado.
+    + Si está en evaluación, enviar documento probatorio de que protocolo está en fase de revisión.
+    
+- Enviar lista de correos electrónicos en clientes `@hotmail` o `outlook`. Colocar correo secundario institucional o personal.
+
+    + Pueden incorporarse investigadores que no sean de EsSalud siempre y cuando el proyecto se realice en EsSalud.
+
+- En 7 días hábiles se contará con las cuentas de usuario creadas y se notificará que pueden proceder a crear un proyecto en REDCap.
+
+# {background-image='img/slide-section.png'}
+
+::: r-fit-text
+¿Preguntas?
+:::
+
+## `r fontawesome::fa("mug-saucer", "white")` Hagamos una pausa {background-color="#000000"}
+
+<hr>
+
+::: r-fit-text
+<center>
+
+Tomemos un descanso de `5 minutos`...
+
+Estire las piernas `r fontawesome::fa("person-walking", "white")`...
+
+Deje de ver las pantallas `r fontawesome::fa("laptop", "white")`...
+
+... cualquier `r fontawesome::fa("laptop", "white")`, las del celular `r fontawesome::fa("mobile", "white")` también.
+
+</center>
+:::
+
+```{r}
+#| echo: false
+library(countdown)
+countdown_timer <- function(
+    minutes = 1, 
+    play_sound = TRUE, 
+    font_size = "2em", 
+    ...
+) {
+  countdown(
+    minutes = minutes,
+    # Fanfare when it's over
+    play_sound = play_sound,
+    # Set timer theme to match solarized colors
+    color_border              = "#404041",
+    color_text                = "white",
+    color_background = "#000000",
+    color_running_background  = "#72994E",
+    color_running_text        = "white",
+    color_finished_background = "#EE6331",
+    color_finished_text       = "white",
+    font_size = font_size,
+    ...
+  )
+}
+```
+
+```{r}
+#| echo: false
+countdown_timer(5)
+```
+
+# {background-image='img/slide-end.png'}
+
+::: footer
+[]{.blanco}
+:::

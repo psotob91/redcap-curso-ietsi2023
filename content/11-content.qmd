@@ -7,10 +7,9 @@ date: "2023-03-17"
 
 En esta sesión se buscará abordar los siguientes temas: 
 
--
--
--
-
+- Aspectos éticos y regulatorios
+- Algunos lineamientos
+- ¿Cómo solicitar acceso a REDCap?
 
 ## Materiales
 
@@ -18,7 +17,7 @@ En esta sesión se buscará abordar los siguientes temas:
 
 ### Clase grabada
 
-
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/810693794?h=5a05844faa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sesi&amp;oacute;n 11 - Aspectos &amp;eacute;ticos y regulatorios de manejo de datos con REDCap"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 
 ### Slides
@@ -28,17 +27,12 @@ source(here::here("R", "slide-things.R"))
 ```
 
 ```{r show-slide-tabs1, echo=FALSE, results="asis"}
-# slide_buttons("/slides/sesion01/sesion01_chalkboard-speaker")
+slide_buttons("/slides/sesion11")
 ```
 
 ```{=html}
-<iframe width="780" height="500" src="../slides/sesion01/sesion01_chalkboard-speaker.html" title="Sesión 1 - Intro a R"></iframe>
+<iframe width="780" height="500" src="../slides/sesion11.html" title="Sesión 11 - Aspectos éticos y regulatorios de manejo de datos con REDCap"></iframe>
 ```
-
-### Talleres
-
-- Puede descargar los archivos generados en la carpeta `taller01` en el siguiente enlace: [Aquí]().
-
 
 :::
 

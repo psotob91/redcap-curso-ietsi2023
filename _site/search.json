@@ -193,14 +193,42 @@
     "href": "content/12-content.html",
     "title": "Sesión 12",
     "section": "",
-    "text": "En esta sesión se buscará abordar los siguientes temas:"
+    "text": "Acerca de esta sesión\n\n\n\n\n\nPor limitaciones de tiempo no se pudó realizar esta sesión de manera sincrónica. En su remplazo, hemos colgado una serie de videos relativametne cortos que abordan los tópicos que hubiéramos deseado compartirles en clase. ¡Vaya que el curso nos quedó corto! Esperamos que hayan disfrutado del curso y les sea de mucho provecho en sus proyectos venideros."
   },
   {
-    "objectID": "content/12-content.html#materiales",
-    "href": "content/12-content.html#materiales",
+    "objectID": "content/12-content.html#objetivos",
+    "href": "content/12-content.html#objetivos",
     "title": "Sesión 12",
-    "section": "Materiales",
-    "text": "Materiales\n\nClase grabadaSlidesTalleres\n\n\n\n\n\n\n\n\n\nPuede descargar los archivos generados en la carpeta taller01 en el siguiente enlace: Aquí."
+    "section": "Objetivos",
+    "text": "Objetivos\nEn esta sesión se buscará abordar los siguientes temas:\n\nAleatorización en REDCap\nDoble entrada de datos\nReportes en REDCap\nMódulos externos\nClonar instrumentos en REDCap\nDashboards en REDCap\nAction tags\nCampos calculados\nTransferencia de segmentos de datos (piping)\nSQL Dinámico en REDCap\nTareas cron\nPlugins / hooks\nConferencias Mundiales de REDCap"
+  },
+  {
+    "objectID": "content/12-content.html#misceláneas-básicas",
+    "href": "content/12-content.html#misceláneas-básicas",
+    "title": "Sesión 12",
+    "section": "Misceláneas básicas",
+    "text": "Misceláneas básicas\n\nAleatorizaciónDoble entrada de datosReportes en REDCapMódulos externosClonar instrumentos en REDCap"
+  },
+  {
+    "objectID": "content/12-content.html#misceláneas-intermedias",
+    "href": "content/12-content.html#misceláneas-intermedias",
+    "title": "Sesión 12",
+    "section": "Misceláneas intermedias",
+    "text": "Misceláneas intermedias\n\nDashboards en REDCapAction tagsCampos calculadosTransferencia de segmentos de datos (piping)"
+  },
+  {
+    "objectID": "content/12-content.html#misceláneas-avanzadas",
+    "href": "content/12-content.html#misceláneas-avanzadas",
+    "title": "Sesión 12",
+    "section": "Misceláneas avanzadas",
+    "text": "Misceláneas avanzadas\n\nSQL Dinámico en REDCapTareas cronPlugins / hooks"
+  },
+  {
+    "objectID": "content/12-content.html#conferencias-mundiales-de-redcap",
+    "href": "content/12-content.html#conferencias-mundiales-de-redcap",
+    "title": "Sesión 12",
+    "section": "Conferencias Mundiales de REDCap",
+    "text": "Conferencias Mundiales de REDCap\n\nREDCap Con Hispano 2021REDCap Con Hispano 2022"
   },
   {
     "objectID": "content/index.html",
